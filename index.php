@@ -2,6 +2,7 @@
     <html>
         <head>
             <meta charset="UTF-8">
+            <script src="../js/jquery.js"></script>
             <link href = "css/bootstrap.css" rel="stylesheet">
             <link href = "css/front_presidio.css" rel="stylesheet">
             <title>Login</title>
@@ -12,7 +13,7 @@
 
                 <h1>Logo da loja</h1><br/>
 
-                <form action="paginas/loja-index.php" method="post" class="form-control form-horizontal">
+                <form action="paginas/presidio-index.php" method="post" class="form-control form-horizontal">
 
                         <div class="form-group">
                             <br/>
