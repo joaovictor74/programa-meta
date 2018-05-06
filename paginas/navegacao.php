@@ -7,12 +7,10 @@
             <a class="nav-link" href="#" style="">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cadastro</a>
             <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-
+                <a class="dropdown-item" href="#">Cadastro Agente</a>
+                <a class="dropdown-item" href="#">Cadastro Detento</a>
             </div>
         </li>
 
