@@ -21,7 +21,7 @@
                 <a class="dropdown-item" href="agente_tabela.php">Tabela de Agentes</a>
                 <a class="dropdown-item" href="#">Tabela de Reeducandos</a>
                 <a class="dropdown-item" href="#">Tabela das Funções</a>
-                <a class="dropdown-item" href="#">Tabala dos Locais</a>
+                <a class="dropdown-item" href="#">Tabela dos Locais</a>
             </div>
         </li>
     </ul>
