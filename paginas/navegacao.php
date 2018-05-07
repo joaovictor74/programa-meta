@@ -20,7 +20,7 @@
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cadastro</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="agente_form.php">Cadastro Agente</a>
-                        <a class="dropdown-item" href="detento_form.php">Cadastro Reeducando</a>
+                        <a class="dropdown-item" href="reeducandos_form.php">Cadastro Reeducando</a>
                     </div>
                 </li>
                 <!--DropDown Tabelas-->
@@ -28,7 +28,7 @@
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tabelas</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="agente_tabela.php">Tabela de Agentes</a>
-                        <a class="dropdown-item" href="detento_tabela.php">Tabela de Reeducandos</a>
+                        <a class="dropdown-item" href="reeducandos_tabela.php">Tabela de Reeducandos</a>
                         <a class="dropdown-item" href="funcao_tabela.php">Tabela das Funções</a>
                         <a class="dropdown-item" href="local_tabela.php">Tabala dos Locais</a>
                     </div>
