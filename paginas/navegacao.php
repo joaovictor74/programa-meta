@@ -6,7 +6,7 @@
         <li class="nav-item">
             <a class="nav-link" href="presidio-index.php" style="">Inicio</a>
         </li>
-        <!--DropDown-->
+        <!--DropDown Cadastro-->
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cadastro</a>
             <div class="dropdown-menu">
@@ -14,9 +14,15 @@
                 <a class="dropdown-item" href="detento_form.php">Cadastro Reeducando</a>
             </div>
         </li>
-        <!--Outra opt-->
-        <li class="nav-item">
-            <a class="nav-link " href="#">Outra Opcao</a>
+        <!--DropDown Tabelas-->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tabelas</a>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="agente_tabela.php">Tabela de Agentes</a>
+                <a class="dropdown-item" href="#">Tabela de Reeducandos</a>
+                <a class="dropdown-item" href="#">Tabela das Funções</a>
+                <a class="dropdown-item" href="#">Tabala dos Locais</a>
+            </div>
         </li>
     </ul>
 </nav>

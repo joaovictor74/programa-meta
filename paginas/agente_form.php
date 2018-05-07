@@ -35,7 +35,7 @@
                     <input id="local_id" name="local" type="text" class="form-control"  required="" placeholder="Local" maxlength="255">
                 </div>
             </div>
-            <!-- Form Botão -->
+            <!-- Form Botão de Inserir-->
             <div class="form-group">
                 <label class="col-md-4 control-label" for="inserir_id"></label>
                 <div class="col-md-5">

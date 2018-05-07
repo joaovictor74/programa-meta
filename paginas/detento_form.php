@@ -41,7 +41,7 @@
                     <input id="cela_id" name="cela" type="text" class="form-control"  required="" placeholder="Cela" maxlength="255">
                 </div>
             </div>
-            <!--  Form Botão -->
+            <!--  Form Botão de Inserir-->
             <div class="form-group">
                 <label class="control-label" for="inserir_id"></label>
                 <div class="col-md-5">
