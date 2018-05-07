@@ -20,6 +20,7 @@
             </script>
         </head>
         <body>
+            <?php require_once "../banco/conexao.php"?>
             <?php require_once "navegacao.php"?>
             <div class ="container">
                 <div class="principal">

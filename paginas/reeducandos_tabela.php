@@ -1,5 +1,4 @@
 <?php   require_once "cabecalho.php";
-require_once "../banco/conexao.php";
 require_once "funcoes.php"?>
     <!-- Legenda Tabela Reeducando-->
     <div class="row">

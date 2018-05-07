@@ -1,6 +1,7 @@
 <?php
     require_once "cabecalho.php";
     require_once "navegacao.php";
+    require_once "funcoes.php"
 ?>
 
     <form class="form-horizontal"  action="../banco/cadastro_agente.php" method="post">
@@ -31,14 +32,18 @@
             <div class="form-group form-inline">
                 <label class="offset-md-4  col-md-2" for="funcao_id">Função:</label>
                 <div class="col-md-2">
-                    <input id="funcao_id" name="funcao" type="text" class="form-control"  required="" placeholder="Função do Agente" maxlength="60" style="width: 300px;">
+                    <select name="selecao_funcao" id="funcao_id" required="" style="width: 200px;" class="form-control">
+                           <?php listaSelect($con,funcao); ?>
+                    </select>
                 </div>
             </div>
             <!-- Form Local-->
             <div class="form-group form-inline">
                 <label class="offset-md-4  col-md-2" for="local_id">Local:</label>
                 <div class="col-md-2">
-                    <input id="local_id" name="local" type="text" class="form-control"  required="" placeholder="Local do Agente" maxlength="255" style="width: 300px;">
+                    <select name="selecao_local" id="local_id" required="" style="width: 200px;" class="form-control">
+                        <?php listaSelect($con,local); ?>
+                    </select>
                 </div>
             </div>
             <!-- Form Botão de Inserir-->

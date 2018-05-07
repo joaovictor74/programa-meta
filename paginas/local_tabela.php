@@ -1,5 +1,4 @@
 <?php   require_once "cabecalho.php";
-require_once "../banco/conexao.php";
 require_once "funcoes.php"?>
 <div class="offset-sm-0 col-md-4" style="float: left;">
     <?php require_once "local_form.php"?>

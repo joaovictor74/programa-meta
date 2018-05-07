@@ -31,6 +31,7 @@ function listaTabelaDetento($con)
         echo "<tr>" . "<td>" . $nome . "</td>" . "<td>" . $vulgo . "</td>" . "<td>" . $nome_mae . "</td>" . "<td>" . $nome_pai . "</td>" . "<td>" . $cela . "</td>" . "</tr>";
     }
 }
+//Sequencia do banco`Funcao`(id,`funcao`)
 function listaTabelaFuncoes($con)
 {
     $selecao = "SELECT * FROM `funcao`";
@@ -44,6 +45,7 @@ function listaTabelaFuncoes($con)
         echo "<tr>" . "<td>" . $funcao . "</td>"."</tr>";
     }
 }
+//Sequencia do banco`Funcao`(id,`local`)
 function listaTabelaLocais($con){
     $selecao = "SELECT * FROM `local`";
     $resultado = mysqli_query($con,$selecao);
@@ -55,5 +57,19 @@ function listaTabelaLocais($con){
         $local     = $var[1];
 
         echo "<tr>"."<td>".$local."</td>"."</tr>";
+    }
+}
+//Funcao de listagem do select dos forms de funcoes e locais
+function listaSelect($con,$tabela){
+    $selecao = "SELECT * FROM `$tabela`";
+    $resultado = mysqli_query($con,$selecao);
+    if (!$resultado) {
+        echo 'Não é possivel rodar o Comando: ' . mysqli_error($con);
+
+    }
+    while($var = mysqli_fetch_row($resultado)) {
+        $selecao    = $var[1];
+
+        echo "<option value=$selecao>$selecao</option>";
     }
 }
