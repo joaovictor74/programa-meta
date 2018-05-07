@@ -8,9 +8,7 @@
             <div class="row">
                 <div class="offset-md-3 col-md-7 ">
                     <div class="page-header">
-                        <div class="page-header ">
-                            <h3 class="text-center">Cadastro do Reeducando</h3>
-                        </div>
+                       <h3 class="text-center " style="margin-bottom:30px"">Cadastro do Reeducando</h3>
                     </div>
                 </div>
             </div>
@@ -18,35 +16,35 @@
             <div class="form-group form-inline">
                 <label class="offset-md-4 col-md-2" for="nome_id">Nome:</label>
                 <div class="col-md-2">
-                    <input id="nome_id" name="nome" type="text" class="form-control"  required="" placeholder="Nome" maxlength="60">
+                    <input id="nome_id" name="nome" type="text" class="form-control"  required="" placeholder="Nome do Reeducando" maxlength="60" style="width: 300px;">
                 </div>
             </div>
             <!--  Form Vulgo (Apelido) do detento-->
             <div class="form-group form-inline">
                 <label class="offset-md-4 col-md-2" for="vulgo_id">Vulgo:</label>
                 <div class="col-md-2">
-                    <input id="vulgo_id" name="vulgo" type="text" class="form-control"  required="" placeholder="Vulgo" maxlength="60">
+                    <input id="vulgo_id" name="vulgo" type="text" class="form-control"  required="" placeholder="Vulgo do Reeducando" maxlength="60" style="width: 300px;">
                 </div>
             </div>
             <!--  Form Nome da Mae Detento -->
             <div class="form-group form-inline">
                 <label class="offset-md-4 col-md-2" style="white-space: nowrap" for="nomeMae_id">Nome do Mãe:</label>
                 <div class="col-md-2">
-                    <input id="nomeMae_id" name="nome_mae" type="text" class="form-control"  required="" placeholder="Nome da Mãe" maxlength="60">
+                    <input id="nomeMae_id" name="nome_mae" type="text" class="form-control"  required="" placeholder="Nome da Mãe do Reeducando" maxlength="60" style="width: 300px;">
                 </div>
             </div>
             <!--  Form Nome do Pai Detento -->
             <div class="form-group form-inline">
                 <label class="offset-md-4 col-md-2" for="nomePai_id">Nome do Pai:</label>
                 <div class="col-md-2">
-                    <input id="nomePai_id" name="nome_pai" type="text" class="form-control"  required="" placeholder="Nome do Pai" maxlength="60">
+                    <input id="nomePai_id" name="nome_pai" type="text" class="form-control"  required="" placeholder="Nome do Pai do Reeducando" maxlength="60" style="width: 300px;">
                 </div>
             </div>
             <!--  Form Nome da Cela -->
             <div class="form-group form-inline">
                 <label class="offset-md-4 col-md-2" for="cela_id">Cela:</label>
                 <div class="col-md-2">
-                    <input id="cela_id" name="cela" type="text" class="form-control"  required="" placeholder="Cela" maxlength="255">
+                    <input id="cela_id" name="cela" type="text" class="form-control"  required="" placeholder="Cela do Reeducando" maxlength="255" style="width: 300px;">
                 </div>
             </div>
             <!--  Form Botão de Inserir-->

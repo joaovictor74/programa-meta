@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand navbar-dark fixed-top " style="background-color:#162930;">
     <!--Brand-->
-    <a class="navbar-brand" href="presidio-index.php">PRESIDIO TAL</a>
+    <div class="navbar-header">
+        <a class="navbar-brand" href="presidio-index.php">PRESIDIO TAL</a>
+    </div>
     <!--Inicio-->
     <ul class="nav navbar ">
         <li class="nav-item">

@@ -9,9 +9,7 @@
             <div class="row">
                 <div class="offset-md-3 col-md-7 ">
                     <div class="page-header">
-                        <div class="page-header ">
-                            <h3 class="text-center" style="margin-bottom:30px">Cadastro de Agente</h3>
-                        </div>
+                        <h3 class="text-center" style="margin-bottom:30px">Cadastro de Agente</h3>
                     </div>
                 </div>
             </div>
@@ -19,28 +17,28 @@
             <div class="form-group form-inline">
                 <label class="offset-md-4 col-md-2" for="matricula_id">Matrícula:</label>
                 <div class="col-md-2">
-                    <input id="matricula_id" name="matricula" type="text" class="form-control" required=""  placeholder="Matrícula" maxlength="14" >
+                    <input id="matricula_id" name="matricula" type="text" class="form-control" required=""  placeholder="Matrícula do Agente" maxlength="14" style="width: 300px;">
                 </div>
             </div>
             <!-- Form Nome do Agente -->
             <div class="form-group form-inline">
                 <label class="offset-md-4  col-md-2" for="nome_id">Nome:</label>
                 <div class="col-md-2">
-                    <input id="nome_id" name="nome" type="text" class="form-control"  required="" placeholder="Nome" maxlength="60">
+                    <input id="nome_id" name="nome" type="text" class="form-control"  required="" placeholder="Nome do Agente" maxlength="60" style="width: 300px;">
                 </div>
             </div>
             <!-- Form Funcão do Agente -->
             <div class="form-group form-inline">
                 <label class="offset-md-4  col-md-2" for="funcao_id">Função:</label>
                 <div class="col-md-2">
-                    <input id="funcao_id" name="funcao" type="text" class="form-control"  required="" placeholder="Função" maxlength="60">
+                    <input id="funcao_id" name="funcao" type="text" class="form-control"  required="" placeholder="Função do Agente" maxlength="60" style="width: 300px;">
                 </div>
             </div>
             <!-- Form Local-->
             <div class="form-group form-inline">
                 <label class="offset-md-4  col-md-2" for="local_id">Local:</label>
                 <div class="col-md-2">
-                    <input id="local_id" name="local" type="text" class="form-control"  required="" placeholder="Local" maxlength="255">
+                    <input id="local_id" name="local" type="text" class="form-control"  required="" placeholder="Local do Agente" maxlength="255" style="width: 300px;">
                 </div>
             </div>
             <!-- Form Botão de Inserir-->
