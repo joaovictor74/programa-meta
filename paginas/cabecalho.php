@@ -7,7 +7,7 @@
             <link rel="stylesheet" href="../js/jquery.dataTablesEstilo.css">
             <link href = "../css/bootstrap.css" rel="stylesheet" id="bootstrap-css">
             <link href = "../css/front_presidio.css" rel="stylesheet">
-            <title>Loja</title>
+            <title>Controle - Presidio</title>
             <script>
                 $(document).ready( function () {
                     $('#myTable').DataTable({
