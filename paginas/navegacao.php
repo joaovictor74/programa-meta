@@ -19,18 +19,18 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Cadastro</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="agente_form.php">Cadastro Agente</a>
-                        <a class="dropdown-item" href="reeducandos_form.php">Cadastro Reeducando</a>
+                        <a class="dropdown-item" href="formulario_agente.php">Cadastro Agente</a>
+                        <a class="dropdown-item" href="formulario_reeducandos.php">Cadastro Reeducando</a>
                     </div>
                 </li>
                 <!--DropDown Tabelas-->
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tabelas</a>
                     <div class="dropdown-menu">
-                        <a class="dropdown-item" href="agente_tabela.php">Tabela de Agentes</a>
-                        <a class="dropdown-item" href="reeducandos_tabela.php">Tabela de Reeducandos</a>
-                        <a class="dropdown-item" href="funcao_tabela.php">Tabela das Funções</a>
-                        <a class="dropdown-item" href="local_tabela.php">Tabala dos Locais</a>
+                        <a class="dropdown-item" href="tabela_agente.php">Tabela de Agentes</a>
+                        <a class="dropdown-item" href="tabela_reeducandos.php">Tabela de Reeducandos</a>
+                        <a class="dropdown-item" href="tabela_funcao.php">Tabela das Funções</a>
+                        <a class="dropdown-item" href="tabela_local.php">Tabala dos Locais</a>
                     </div>
                 </li>
             </ul>

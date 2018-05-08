@@ -1,10 +1,10 @@
 <?php
 
 require_once "conexao.php";
+$id = $_POST["id"];
+$alteracao = $_POST["funcao"];
 
-$funcao = $_POST["funcao"];
-
-$mysql = "INSERT INTO `funcao`(`funcao`) VALUES ('$funcao')";
+$mysql = "UPDATE `funcao` SET `funcao` = '$alteracao' WHERE `$linha`.`id` = $id;";
 
 if($resp = mysqli_query($con,$mysql)){
     header("Location:../paginas/tabela_funcao.php");

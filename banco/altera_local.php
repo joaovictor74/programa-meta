@@ -1,10 +1,10 @@
 <?php
 
 require_once "conexao.php";
+$id = $_POST["id"];
+$alteracao = $_POST["local"];
 
-$local = $_POST["local"];
-
-$mysql = "INSERT INTO `local`(`local`) VALUES ('$local')";
+$mysql = "UPDATE `local` SET `local` = '$alteracao' WHERE `$linha`.`id` = $id;";
 
 if($resp = mysqli_query($con,$mysql)){
     header("Location:../paginas/tabela_local.php");
