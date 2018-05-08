@@ -2,10 +2,10 @@
       require_once "funcoes.php";
 
 $id = $_GET["id"];
-$linha = $_GET["linha"];
 
-if(deletar($con,$linha,$id)){
-    header("Location:tabela_$linha.php");
+
+if(deletar($con,"reeducando",$id)){
+    header("Location:tabela_reeducando.php");
     die();
 }else {
     echo 'Não é possivel rodar o Comando: ' . mysqli_error($con);

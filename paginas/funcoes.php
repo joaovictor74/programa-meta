@@ -24,12 +24,17 @@ function listaTabelaDetento($con)
         echo 'Não é possivel rodar o Comando: ' . mysqli_error($con);
     }
     while ($var = mysqli_fetch_row($resultado)) {
+        $id = $var[0];
         $nome = $var[1];
         $vulgo = $var[2];
-        $nome_pai = $var[3];
-        $nome_mae = $var[4];
+        $nome_mae = $var[3];
+        $nome_pai = $var[4];
         $cela = $var[5];
-        echo "<tr>" . "<td>" . $nome . "</td>" . "<td>" . $vulgo . "</td>" . "<td>" . $nome_mae . "</td>" . "<td>" . $nome_pai . "</td>" . "<td>" . $cela . "</td>" . "</tr>";
+        echo "<tr>";
+        echo "<td>" . $nome . "</td>" . "<td>" . $vulgo . "</td>" . "<td>" . $nome_mae . "</td>" . "<td>" . $nome_pai . "</td>" . "<td>" . $cela . "</td>";
+        echo "<td>"."<a href='altera_reeducando.php?id=$id' class='btn btn-primary' style='margin-right:3px'>"."Alterar"."</a>";
+        echo        "<a href='remove_reeducando.php?id=$id' class='btn btn-danger'>"."Deletar"."</a>"."</td>";
+        echo "</tr>";
     }
 }
 //Sequencia do banco`Funcao`(id,`funcao`)
@@ -85,8 +90,8 @@ function listaSelect($con,$tabela){
 }
 
 //funcao deletar
-function deletar($con,$tabela,$linha,$id){
-    $resp = mysqli_query($con,"DELETE FROM `$tabela` WHERE `$linha`.`id` = $id");
+function deletar($con,$tabela,$id){
+    $resp = mysqli_query($con,"DELETE FROM `$tabela` WHERE `id` = $id");
     return $resp;
 }
 //funcao buscar

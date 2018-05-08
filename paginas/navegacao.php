@@ -28,7 +28,7 @@
                     <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Tabelas</a>
                     <div class="dropdown-menu">
                         <a class="dropdown-item" href="tabela_agente.php">Tabela de Agentes</a>
-                        <a class="dropdown-item" href="tabela_reeducandos.php">Tabela de Reeducandos</a>
+                        <a class="dropdown-item" href="tabela_reeducando.php">Tabela de Reeducandos</a>
                         <a class="dropdown-item" href="tabela_funcao.php">Tabela das Funções</a>
                         <a class="dropdown-item" href="tabela_local.php">Tabala dos Locais</a>
                     </div>

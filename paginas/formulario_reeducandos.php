@@ -3,7 +3,7 @@
     require_once "navegacao.php";
 ?>
 
-    <form class="form-horizontal" action="../banco/cadastro_detento.php" method="post">
+    <form class="form-horizontal" action="../banco/cadastro_reeducando.php" method="post">
         <fieldset>
             <div class="row">
                 <div class="offset-md-3 col-md-7 ">

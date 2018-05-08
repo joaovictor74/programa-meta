@@ -16,6 +16,7 @@ require_once "funcoes.php"?>
             <th>Nome da Mãe</th>
             <th>Nome do Pai</th>
             <th>Cela</th>
+            <th>Opções</th>
         </tr>
         </thead>
         <tbody>

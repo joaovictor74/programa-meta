@@ -24,7 +24,7 @@ $local = buscarLinha($con,$tab,$id);
             </div>
         </div>
         <input type="hidden" value="<?=$id?>" name="id">
-        <!-- Form Botão de Inserir-->
+        <!-- Form Botão de Alterar-->
         <div class="form-group">
             <label class="col-md-4 control-label" for="altera_id"></label>
             <div class="offset-md-2 col-md-8">
