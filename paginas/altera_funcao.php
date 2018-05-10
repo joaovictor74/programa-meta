@@ -12,7 +12,7 @@ $funcao = buscarLinha($con,$tab,$id);
         <div class="row">
             <div class="offset-md-2 col-md-8">
                 <div class="page-header">
-                    <h3 class="text-center" style="white-space:nowrap; margin-bottom:30px">Alterar função</h3>
+                    <h3 class="text-center" style="white-space:nowrap; margin-bottom:30px">Alterar Função</h3>
                 </div>
             </div>
         </div>
@@ -34,7 +34,7 @@ $funcao = buscarLinha($con,$tab,$id);
     </fieldset>
 </form>
 
-
+<?= require_once "rodape.php"?>
 
 
 

@@ -33,7 +33,7 @@ $local = buscarLinha($con,$tab,$id);
         </div>
     </fieldset>
 </form>
-
+<?= require_once "rodape.php"?>
 
 
 

@@ -62,7 +62,7 @@ $funcao = buscarLinha($con,$tab,$id);
     </fieldset>
 </form>
 
-
+<?= require_once "rodape.php"?>
 
 
 

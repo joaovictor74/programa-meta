@@ -15,6 +15,7 @@
         <th>Nome</th>
         <th>Função</th>
         <th>Local</th>
+        <th>Opções</th>
     </tr>
     </thead>
     <tbody>

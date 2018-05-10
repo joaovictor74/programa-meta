@@ -1,13 +1,15 @@
 <?php
 
 require_once "conexao.php";
-$id = $_POST["id"];
-$alteracao = $_POST["funcao"];
 
-$mysql = "UPDATE `funcao` SET `funcao` = '$alteracao' WHERE `$linha`.`id` = $id;";
+$matricula = $_POST["matricula"];
+$nome = $_POST["nome"];
+$funcao = $_POST["selecao_funcao"];
+$local = $_POST["selecao_local"];
+$mysql = "UPDATE `agente` SET `nome` = '$nome', `funcao` = '$funcao', `local` = '$local' WHERE `matricula` = $matricula;";
 
 if($resp = mysqli_query($con,$mysql)){
-    header("Location:../paginas/tabela_funcao.php");
+    header("Location:../paginas/tabela_agente.php");
     die();
 }else{
     echo "Problema na insercao";
