@@ -13,7 +13,7 @@
         <div class="collapse navbar-collapse" id="barra-navegacao">
             <ul class="nav navbar">
                 <li class="nav-item">
-                    <a class="nav-link" href="presidio-index.php" style="">Inicio</a>
+                <a class="nav-link" href="presidio-index.php" style="">Inicio</a>
                 </li>
                 <!--DropDown Cadastro-->
                 <li class="nav-item dropdown">
@@ -33,6 +33,11 @@
                         <a class="dropdown-item" href="tabela_local.php">Tabala dos Locais</a>
                     </div>
                 </li>
+                <!--Deslogar-->
+                <div style="align-self: right; justify-self: center;">
+                   <li class="nav-item" ><a class="nav-link" href="desloga.php";>Deslogar</a></li>
+                </div>
+
             </ul>
         </div>
     </div>

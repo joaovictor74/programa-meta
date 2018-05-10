@@ -122,3 +122,10 @@ function buscarLinha($con,$tabela,$id){
     $resp  = mysqli_query($con,$query);
     return mysqli_fetch_assoc($resp);
 }
+
+//funcao deloga
+function desloga(){
+    unset($_COOKIE['login']);
+    setcookie('login', null, -1, '/');
+    return true;
+}
