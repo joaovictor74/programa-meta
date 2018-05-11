@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: 07-Maio-2018 às 18:16
+-- Generation Time: 11-Maio-2018 às 17:38
 -- Versão do servidor: 5.7.21-log
 -- PHP Version: 5.6.31
 
@@ -32,24 +32,19 @@ USE `presidio`;
 
 DROP TABLE IF EXISTS `agente`;
 CREATE TABLE IF NOT EXISTS `agente` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
   `matricula` int(14) NOT NULL,
   `nome` varchar(60) NOT NULL,
   `funcao` varchar(60) NOT NULL,
   `local` varchar(255) NOT NULL,
-  PRIMARY KEY (`id`),
   UNIQUE KEY `matricula` (`matricula`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `agente`
 --
 
-INSERT INTO `agente` (`id`, `matricula`, `nome`, `funcao`, `local`) VALUES
-(1, 21, '21', '21', '12'),
-(2, 2, 'teste', 'teste2', 'testee2'),
-(3, 1, '0002', '00330', '3120'),
-(4, 213123, '123123', '123123', '123123');
+INSERT INTO `agente` (`matricula`, `nome`, `funcao`, `local`) VALUES
+(20053, 'Agente Inspecao', 'Agente', 'Pavilhao-A');
 
 -- --------------------------------------------------------
 
@@ -62,7 +57,16 @@ CREATE TABLE IF NOT EXISTS `funcao` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `funcao` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `funcao`
+--
+
+INSERT INTO `funcao` (`id`, `funcao`) VALUES
+(2, 'Medico'),
+(3, 'Agente'),
+(4, 'Cazé');
 
 -- --------------------------------------------------------
 
@@ -75,7 +79,16 @@ CREATE TABLE IF NOT EXISTS `local` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `local` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=18 DEFAULT CHARSET=latin1;
+
+--
+-- Extraindo dados da tabela `local`
+--
+
+INSERT INTO `local` (`id`, `local`) VALUES
+(1, 'Pavilhao-A'),
+(13, 'Pavilhao-B'),
+(14, 'Pavilhao-C');
 
 -- --------------------------------------------------------
 
@@ -88,25 +101,40 @@ CREATE TABLE IF NOT EXISTS `reeducando` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `nome` varchar(60) NOT NULL,
   `vulgo` varchar(60) NOT NULL,
-  `nome_pai` varchar(60) NOT NULL,
   `nome_mae` varchar(60) NOT NULL,
+  `nome_pai` varchar(60) NOT NULL,
   `cela` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=latin1;
 
 --
 -- Extraindo dados da tabela `reeducando`
 --
 
-INSERT INTO `reeducando` (`id`, `nome`, `vulgo`, `nome_pai`, `nome_mae`, `cela`) VALUES
-(1, 'chidoriman', 'pitombeira', 'marilan', 'pironba', '14-chelo'),
-(2, 'chidoriman2', 'pitombeira2', 'marilan2', 'pironba2', '14-chelo2'),
-(3, 'chidoriman23', 'pitombeira23', 'marilan23', 'pironba23', '14-chelo23'),
-(4, 'porraaaa', 'joajaoajo', 'puripa', 'perpeu', 'Ced_ter'),
-(5, 'teste 1', '', '', '', ''),
-(6, 'nome 2', '', '', '', ''),
-(7, 'nome 3', '', '', '', ''),
-(8, '11', '', '', '', '');
+INSERT INTO `reeducando` (`id`, `nome`, `vulgo`, `nome_mae`, `nome_pai`, `cela`) VALUES
+(14, 'Daniel das Ideia', 'Via dhin', 'Mae', 'Pai', 'Cela Rosa');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura da tabela `usuarios`
+--
+
+DROP TABLE IF EXISTS `usuarios`;
+CREATE TABLE IF NOT EXISTS `usuarios` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `login` varchar(30) NOT NULL,
+  `senha` varchar(40) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+
+--
+-- Extraindo dados da tabela `usuarios`
+--
+
+INSERT INTO `usuarios` (`id`, `login`, `senha`) VALUES
+(1, 'joao', '202cb962ac59075b964b07152d234b70'),
+(2, 'MEOW', '035466283a3b0c16f87041e2cf843f08');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
