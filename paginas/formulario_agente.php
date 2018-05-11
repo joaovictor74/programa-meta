@@ -1,7 +1,12 @@
 <?php
     require_once "cabecalho.php";
     require_once "navegacao.php";
-    require_once "funcoes.php"
+    require_once "funcoes.php";
+    @$cad= $_GET["cad"];
+    if($cad){
+        echo"<script language='javascript' type='text/javascript'>alert('Usuario cadastrado com Sucesso');</script>";
+        $cad =0;
+    }
 ?>
 
     <form class="form-horizontal"  action="../banco/cadastro_agente.php" method="post">

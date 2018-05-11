@@ -2,7 +2,7 @@
 
 $host="localhost";
 $usuario ="root";
-$senha ="5555";
+$senha ="";
 $bd="presidio";
 
 if(!$con = mysqli_connect($host,$usuario,$senha,$bd)){
